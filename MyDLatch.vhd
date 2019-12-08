@@ -5,6 +5,7 @@ USE ieee.std_logic_1164.all;
 -- is 1. If the Enable is 0, then the output will maintain whatever value it was currently at until the next rising edge 
 -- of the clock
 
+-- This is a D-latch with an enable, not a clock (rising edge is not consistent with a clock)
 Entity MyDLatch IS
   port( D : IN STD_LOGIC;
         Enable : IN STD_LOGIC;

@@ -5,7 +5,7 @@ Entity Decoder3to8 IS
   PORT(select : INSTD_LOGIC_VECTOR(1 downto 0);
        enable : INSTD_LOGIC;
        output : OUTSTD_LOGIC_VECTOR(3 downto 0));
-END Decoder2to4;
+END Decoder3to8;
 
 Architecture function OF Decoder3to8 IS
 Begin

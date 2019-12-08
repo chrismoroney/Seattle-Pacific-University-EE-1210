@@ -5,7 +5,7 @@ Entity mux8to1 IS
   port(data : INSTD_LOGIC_VECTOR(7 downto 0);
        select : INSTD_LOGIC_VECTOR(1 downto 0);
        output : OUTSTD_LOGIC);
- END mux4to1;
+ END mux8to1;
  
 Architecture behavior OF mux4to1 IS
 Begin

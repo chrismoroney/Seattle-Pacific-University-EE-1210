@@ -1,6 +1,9 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+-- VHDL code represents a 3 : 8  decoder that takes in a decoder value and an enable, and determines the output
+-- The output should match the encoder if this was an 8 : 1 encoder
+
 Entity Decoder3to8 IS
   PORT(select : INSTD_LOGIC_VECTOR(1 downto 0);
        enable : INSTD_LOGIC;

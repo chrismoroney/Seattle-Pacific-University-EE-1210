@@ -1,6 +1,10 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+-- VHDL code represents an 8 to 1 multiplexor, which enters in any 3 bit value (from 0 to 7), and will output
+-- the value corresponding to the data connected to whatever is inputted into the multiplexor. The data value should match
+-- with the 3 bit value if it is being decoded.
+
 Entity mux8to1 IS
   port(data : INSTD_LOGIC_VECTOR(7 downto 0);
        select : INSTD_LOGIC_VECTOR(1 downto 0);

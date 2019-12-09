@@ -8,7 +8,7 @@ Entity SimpleCounter3Bit IS
   port( Clock : IN STD_LOGIC;
         Enable : IN STD_LOGIC;
         Output : OUT STD_LOGIC_VECTOR(7 downto 0)); -- max output can be is 7, least is 0
-END SimpleCounter8Bit;
+END SimpleCounter3Bit;
 
 Architecture func of SimpleCounter3Bit IS     -- given this is an 3 bit counter, we are simulating the counts from 0 to 7
 Signal Counter : STD_LOGIC_VECTOR(7 downto 0) -- we use this signal so that we can actively change this before setting it 

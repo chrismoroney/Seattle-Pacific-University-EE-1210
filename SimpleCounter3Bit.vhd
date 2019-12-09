@@ -12,7 +12,7 @@ END SimpleCounter3Bit;
 
 Architecture func of SimpleCounter3Bit IS     -- given this is an 3 bit counter, we are simulating the counts from 0 to 7
 Signal Counter : STD_LOGIC_VECTOR(7 downto 0) -- we use this signal so that we can actively change this before setting it 
-BEGIN                                            so that we can then send a "snapshot" of the output to output.
+BEGIN                                         -- so that we can then send a "snapshot" of the output to output.
   Process(Clock)
   BEGIN
     IF (RISING_EDGE(Clock)) THEN

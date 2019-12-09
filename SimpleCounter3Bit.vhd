@@ -24,4 +24,4 @@ BEGIN                                            so that we can then send a "sna
     END IF;
   END Process;
   Output <= Counter;
-END func
+END func;

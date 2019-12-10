@@ -5,7 +5,7 @@ USE ieee.std_logic_1164.all;
 -- The output should match the encoder if this was an 8 : 1 encoder
 
 Entity Decoder3to8 IS
-  PORT(select : INSTD_LOGIC_VECTOR(1 downto 0);
+  PORT(selecter : INSTD_LOGIC_VECTOR(1 downto 0);
        enable : INSTD_LOGIC;
        output : OUTSTD_LOGIC_VECTOR(3 downto 0));
 END Decoder3to8;
@@ -15,7 +15,7 @@ Begin
   Process(select, enable)
   Begin
     IF (enable = "1") THEN
-      CASE (select) IS 
+      CASE (selecter) IS 
         WHEN "000" => output <= "00000001";
         WHEN "001" => output <= "00000010";
         WHEN "010" => output <= "00000100";

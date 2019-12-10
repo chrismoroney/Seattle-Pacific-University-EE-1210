@@ -7,13 +7,13 @@ USE ieee.std_logic_1164.all;
 
 Entity mux8to1 IS
   port(data : INSTD_LOGIC_VECTOR(7 downto 0);
-       select : INSTD_LOGIC_VECTOR(1 downto 0);
+       sel : INSTD_LOGIC_VECTOR(1 downto 0);
        output : OUTSTD_LOGIC);
  END mux8to1;
  
-Architecture behavior OF mux4to1 IS
+Architecture behavior OF mux8to1 IS
 Begin
-  Process(data, select)
+  Process(data, sel)
   Begin
     Case sel IS 
       WHEN "000" => output <= data(0);

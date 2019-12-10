@@ -8,7 +8,7 @@ Entity MyClockDLatch IS
   port( D : IN STD_LOGIC;
         Clock : IN STD_LOGIC;
         Qout : INOUT STD_LOGIC);
-END MyDLatch;
+END MyClockDLatch;
 
 Architecture func OF MyClockDLatch IS
 BEGIN 

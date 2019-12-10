@@ -8,7 +8,7 @@ Entity PriorityEncoder8 IS
   port( priorityVal : INSTD_LOGIC_VECTOR(7 downto 0);
         output : OUTSTD_LOGIC_VECTOR(2 downto 0);    
         worstCaseOut: OUTSTD_LOGIC);
-END PriorityEndcoder8;
+END PriorityEncoder8;
 
 Architecture func OF PriorityEncoder8 IS 
 Begin

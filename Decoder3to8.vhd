@@ -12,7 +12,7 @@ END Decoder3to8;
 
 Architecture function OF Decoder3to8 IS
 Begin
-  Process(select, enable)
+  Process(selecter, enable)
   Begin
     IF (enable = "1") THEN
       CASE (selecter) IS 
